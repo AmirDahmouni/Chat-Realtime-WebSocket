@@ -1,8 +1,0 @@
-{
-    "jwtPrivateKey": "chat2021",
-    "MONGO_URL": "mongodb://localhost/chat",
-    "PORT": "5000",
-    "API Key":"973846638742622",
-    "API Secret":"0KX5SijCSKVq_ZWZ7UgkkG2Y3zM",
-    "Cloud name":"dlezocxhe"
-}
