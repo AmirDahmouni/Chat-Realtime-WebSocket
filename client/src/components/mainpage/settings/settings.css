@@ -1,0 +1,135 @@
+.profile-box {
+  padding: 100px 0 20px 0;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.image-container {
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  position: relative;
+}
+
+.edit-image-icon {
+  font-size: 18px;
+  color: white;
+}
+
+.profile-image {
+  background-position: 50% 50%;
+  background-repeat: none;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.edit-image-container {
+  position: absolute;
+  top: 75px;
+  display: flex;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  left: 0;
+  width: 150px;
+  height: 75px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.image-container:hover .edit-image-container {
+  visibility: visible;
+}
+
+.backdrop-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-footer {
+  display: flex;
+  margin-top: 30px;
+  align-items: flex-end;
+  padding: 0;
+}
+
+.button-success {
+  font-weight: 400;
+  outline: none;
+  font-size: 16px;
+  background-color: transparent;
+  color: rgb(0, 153, 255);
+  padding: 10px;
+  border: 0;
+}
+
+.button-danger {
+  font-weight: 600;
+  font-size: 16px;
+  border: 0;
+  outline: none;
+  color: #f03d25;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.modal-container {
+  --width: 500px;
+  background-color: white;
+  border-radius: 8px;
+  min-height: 200px;
+  position: fixed;
+  top: 25vh;
+  left: calc(50vw - var(--width) / 2);
+  padding: 20px 20px 0 20px;
+  z-index: 99999;
+  width: var(--width);
+}
+
+.modal-input {
+  padding: 10px 20px 10px 20px;
+  margin-top: 10px;
+  width: 100%;
+  outline: none;
+}
+
+.modal-input:focus {
+  border: 2px solid rgb(0, 153, 255);
+}
+
+.modal-content-text {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+}
+
+.field-title {
+  font-weight: 400;
+  font-size: 15px;
+  margin: 0;
+}
+
+.field-content {
+  font-weight: 400;
+  font-size: 14px;
+  color: #999999;
+}
+
+.edit-icon {
+  margin-left: 10px;
+  font-size: 16px;
+  color: #0084ff;
+  cursor: pointer;
+}
+
+.field-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
